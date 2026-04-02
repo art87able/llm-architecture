@@ -1,0 +1,5 @@
+jupyter-book>=1.0.0
+datasets
+torch
+numpy
+matplotlib

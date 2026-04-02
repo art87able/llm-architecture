@@ -1,0 +1,9 @@
+version: 1
+project:
+  title: "LLM Architecture - Optimization in PyTorch"
+  github: https://github.com/art87able/llm-architecture
+  toc:
+    - file: intro.md
+    - file: notebook.ipynb
+site:
+  template: book-theme
