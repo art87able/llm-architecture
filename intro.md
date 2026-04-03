@@ -1,42 +1,26 @@
-# Optimization in PyTorch
+# LLM Architectures
 
-This book covers optimization techniques in PyTorch, including Gradient Descent, SGD, Numerical Stability, and L1 Regularization.
-
-## Learning Goals
-
-By completing this material, you will:
-
-1. Understand preprocessing design choices (tokenization, fixed vocabulary)
-2. Implement and train Logistic Regression manually in PyTorch using SGD
-3. Explain why numerical stability matters in softmax and log-loss
-4. Understand how optimization parameters (learning rate, batch size) affect training
-5. Understand the effect of L1 regularization and why it encourages sparsity
-6. Understand how optimization algorithms behave on different loss landscapes
+Course materials and homework assignments for the LLM Architectures course.
 
 ## Contents
 
-### Part 1 - SGD for Logistic Regression
+### Week 2 - Gradient Descent & PyTorch
 
-Using the SST-2 (Stanford Sentiment Treebank) dataset for binary sentiment classification:
+Lecture notebook covering:
 
-- Data loading and preprocessing (text cleaning, tokenization, Bag-of-Words)
-- Implementing Logistic Regression in PyTorch
-- Training with mini-batch SGD
-- Experimenting with learning rates and batch sizes
-- L1 Regularization and sparsity
+- Gradient flow and gradient descent visualizations
+- Autodiff with PyTorch
+- GD and SGD for linear regression
+- Classification with logistic regression
+- Numerical stability of softmax and log loss
 
-### Part 2 - Comparing Optimization Algorithms
+### Hometask 1 - Optimization in PyTorch
 
-Implementing and comparing optimizers on convex and non-convex functions:
+Homework assignment on optimization techniques:
 
-- Gradient Descent (GD)
-- Momentum
-- AdaGrad
-- Adam
-
-### Bonus
-
-An exploration of the L1 regularization phenomenon and proximal descent.
+- **Part 1** - SGD for Logistic Regression on SST-2 sentiment classification
+- **Part 2** - Comparing optimization algorithms (GD, Momentum, AdaGrad, Adam)
+- **Bonus** - L1 regularization and proximal descent
 
 ## Setup
 

@@ -1,9 +1,14 @@
 version: 1
 project:
-  title: "LLM Architecture - Optimization in PyTorch"
+  title: "LLM Architectures"
   github: https://github.com/art87able/llm-architecture
   toc:
     - file: intro.md
-    - file: notebook.ipynb
+    - title: "Week 2 - Gradient Descent & PyTorch"
+      children:
+        - file: LLM_Architectures,_week_2_Gradient_descent_&_Pytorch.ipynb
+    - title: "Hometask 1 - Optimization in PyTorch"
+      children:
+        - file: notebook.ipynb
 site:
   template: book-theme
