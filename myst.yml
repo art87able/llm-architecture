@@ -9,6 +9,6 @@ project:
         - file: LLM_Architectures,_week_2_Gradient_descent_&_Pytorch.ipynb
     - title: "Hometask 1 - Optimization in PyTorch"
       children:
-        - file: notebook.ipynb
+        - file: "Copy_of_LLM_Architectures,_hometask_1.ipynb"
 site:
   template: book-theme

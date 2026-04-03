@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to fill in homework solutions in notebook.ipynb.
+Script to fill in homework solutions in Copy_of_LLM_Architectures,_hometask_1.ipynb.
 Modifies the notebook JSON in-place: fills skeleton code cells and adds markdown analysis cells.
 """
 import json
@@ -616,7 +616,7 @@ MD_AFTER_40 = r'''**Analysis: Comparing Optimization Algorithms**
 
 
 def main():
-    with open("notebook.ipynb", "r") as f:
+    with open("Copy_of_LLM_Architectures,_hometask_1.ipynb", "r") as f:
         nb = json.load(f)
 
     cells = nb["cells"]
@@ -654,18 +654,9 @@ def main():
         }
         cells.insert(insert_idx, md_cell)
 
-    # Update Colab badge URL to point to renamed notebook
-    if cells[0]["cell_type"] == "markdown":
-        old_src = "".join(cells[0]["source"])
-        new_src = old_src.replace(
-            "Copy_of_LLM_Architectures%2C_hometask_1.ipynb",
-            "notebook.ipynb"
-        )
-        cells[0]["source"] = fix_source_lines(new_src)
-
     nb["cells"] = cells
 
-    with open("notebook.ipynb", "w") as f:
+    with open("Copy_of_LLM_Architectures,_hometask_1.ipynb", "w") as f:
         json.dump(nb, f, indent=1, ensure_ascii=False)
 
     print("Notebook updated successfully!")
